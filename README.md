@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 🟣 DRL Coin — The Official Meme Coin of Daegu Rugby Legends
 
 ![DRL Logo](assets/logo.png)
@@ -41,3 +42,6 @@ Our goal is to celebrate the DRL community, experiment with blockchain technolog
 ```bash
 git clone git@github.com:AhmedFakhry47/drl_coin.git
 cd drl_coin
+=======
+# drl_coin
+>>>>>>> origin-main
