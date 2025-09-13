@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>DRL Coin — Daegu Rugby Legends</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="DRL Coin — the meme coin of Daegu Rugby Legends. Community, fun, and on-chain experiments." />
+  <meta property="og:title" content="DRL Coin — Daegu Rugby Legends" />
+  <meta property="og:description" content="The official meme coin of the Daegu Rugby Legends (DRL)." />
+  <meta property="og:type" content="website" />
+  <link rel="icon" href="assets/drl-logo.png" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="container">
+    <img class="logo" src="assets/drl-logo.png" alt="DRL Coin logo" />
+    <h1>DRL Coin</h1>
+    <p class="tagline">The official meme coin of the <strong>Daegu Rugby Legends</strong></p>
+    <a class="cta" href="#get-drl">Get DRL</a>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <h2>What is DRL Coin?</h2>
+      <p>
+        <strong>DRL</strong> is a community-driven meme coin for the Daegu Rugby Legends.
+        It celebrates the team spirit, funds fun on-chain experiments, and gives fans a token to rally around.
+      </p>
+    </section>
+
+    <section class="grid">
+      <div class="card">
+        <h3>Token Info</h3>
+        <ul class="list">
+          <li><b>Symbol:</b> DRL</li>
+          <li><b>Decimals:</b> 18</li>
+          <li><b>Initial Supply:</b> 1,000,000 DRL</li>
+          <li><b>Standard:</b> ERC-20 style (Solidity 0.8.x)</li>
+          <li>
+            <b>Contract:</b>
+            <code id="contract">0xYOUR_CONTRACT_ADDRESS</code>
+            <button class="tiny" onclick="copyAddr()">Copy</button>
+          </li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Utility</h3>
+        <ul class="list">
+          <li>Team perks & event rewards</li>
+          <li>Community votes & challenges</li>
+          <li>Future NFTs / merch experiments</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="get-drl" class="card">
+      <h2>How to Get DRL</h2>
+      <ol class="list">
+        <li>Add the network (your RPC / Chain ID) to MetaMask.</li>
+        <li>Add the DRL token by contract address.</li>
+        <li>Swap on our DEX pool (coming soon) or claim from team drops.</li>
+      </ol>
+      <p class="note">
+        DRL is a meme coin for community fun. It has no intrinsic value and is not financial advice.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>Links</h2>
+      <p>
+        <a href="https://github.com/AhmedFakhry47/drl_coin" target="_blank" rel="noopener">GitHub Repository</a>
+      </p>
+    </section>
+  </main>
+
+  <footer class="container footer">
+    Made with 💜 by the Daegu Rugby Legends
+  </footer>
+
+  <script>
+    function copyAddr() {
+      const el = document.getElementById('contract');
+      navigator.clipboard.writeText(el.textContent.trim()).then(() => {
+        alert('Contract address copied!');
+      });
+    }
+  </script>
+</body>
+</html>
